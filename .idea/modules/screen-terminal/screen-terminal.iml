@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":screen-terminal" external.linked.project.path="$MODULE_DIR$/../../../screen-terminal" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="dg.dog-shop-gradle-clients" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../../../screen-terminal/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/../../../screen-terminal/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../screen-terminal">
+      <sourceFolder url="file://$MODULE_DIR$/../../../screen-terminal/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../screen-terminal/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../screen-terminal/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../screen-terminal/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../screen-terminal/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../screen-terminal/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.jboss.resteasy:resteasy-client:3.1.0.CR2" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http:2.3.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http-server:2.3.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-framework:2.3.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-container-grizzly-client:1.13" level="project" />
+    <orderEntry type="library" name="Gradle: javax.websocket:javax.websocket-api:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.9" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
+    <orderEntry type="library" name="Gradle: net.jcip:jcip-annotations:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" name="Gradle: javax.activation:activation:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.0.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.jackson:jackson-xc:1.9.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.jackson:jackson-jaxrs:1.9.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.resteasy:resteasy-jaxrs:3.1.0.CR2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.resteasy:resteasy-jackson-provider:3.1.0.CR2" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-client:1.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-core:1.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-spi:1.13" level="project" />
+  </component>
+</module>

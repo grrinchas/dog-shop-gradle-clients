@@ -1,0 +1,5 @@
+rootProject.name = 'dog-shop-gradle-clients'
+include 'cashier-terminal'
+include 'customer-terminal'
+include 'screen-terminal'
+

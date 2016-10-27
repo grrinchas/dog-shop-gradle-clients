@@ -1,0 +1,54 @@
+
+allprojects {
+
+    group 'dg.dog-shop-gradle-clients'
+    version '1.0'
+
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+
+}
+subprojects {
+    apply plugin: 'application'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-client
+        compile group: 'org.jboss.resteasy', name: 'resteasy-client', version: '3.1.0.CR2'
+// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jackson-provider
+        compile group: 'org.jboss.resteasy', name: 'resteasy-jackson-provider', version: '3.1.0.CR2'
+
+    }
+
+}
+
+project(':cashier-terminal') {
+
+    run {
+        mainClassName = 'CashierTerminal'
+    }
+}
+project(':customer-terminal') {
+
+    run {
+        mainClassName = 'CustomerTerminal'
+    }
+}
+project(':screen-terminal') {
+
+    run {
+        mainClassName = 'ScreenTerminal'
+    }
+
+    dependencies{
+        // https://mvnrepository.com/artifact/org.glassfish.tyrus/tyrus-client
+        compile group: 'org.glassfish.tyrus', name: 'tyrus-client', version: '1.13'
+// https://mvnrepository.com/artifact/org.glassfish.tyrus/tyrus-container-grizzly-client
+        compile group: 'org.glassfish.tyrus', name: 'tyrus-container-grizzly-client', version: '1.13'
+
+    }
+}
