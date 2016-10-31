@@ -6,14 +6,13 @@ import javafx.stage.Stage;
 
 import java.net.URI;
 
-public class ScreenTerminal extends Application {
+public class PickerTerminal extends Application {
 
     public static final int WIDTH = 500;
-    public static final int HEIGHT = 250;
+    public static final int HEIGHT = 450;
     public static final String TITLE = "Dog Shop v1.0";
     public static final URI SERVER_URI = URI.create("ws://localhost:8080/dog-shop/orders");
-    public static final URI FXML = URI.create("screenTerminal.fxml");
-
+    public static final URI FXML = URI.create("pickerTerminal.fxml");
 
 
     @Override
@@ -31,6 +30,8 @@ public class ScreenTerminal extends Application {
         primaryStage.setResizable(false);
         primaryStage.show();
     }
+
+
 
     public static void main(String[] args) {
         launch(args);

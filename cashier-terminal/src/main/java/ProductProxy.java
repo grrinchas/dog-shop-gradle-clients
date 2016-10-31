@@ -4,7 +4,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import java.util.List;
 
-@Path("/r/products")
+@Path("/products")
 public interface ProductProxy {
 
     @GET

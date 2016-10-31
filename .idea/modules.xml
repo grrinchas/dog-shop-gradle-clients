@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cashier-terminal/cashier-terminal.iml" filepath="$PROJECT_DIR$/.idea/modules/cashier-terminal/cashier-terminal.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/customer-terminal/customer-terminal.iml" filepath="$PROJECT_DIR$/.idea/modules/customer-terminal/customer-terminal.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dog-shop-gradle-clients.iml" filepath="$PROJECT_DIR$/.idea/modules/dog-shop-gradle-clients.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/picker-terminal/picker-terminal.iml" filepath="$PROJECT_DIR$/.idea/modules/picker-terminal/picker-terminal.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/screen-terminal/screen-terminal.iml" filepath="$PROJECT_DIR$/.idea/modules/screen-terminal/screen-terminal.iml" />
     </modules>
   </component>

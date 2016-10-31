@@ -1,13 +1,18 @@
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.util.Callback;
+import org.codehaus.jackson.map.ObjectMapper;
 
-/**
- * Created by dg467 on 27/10/2016.
- */
+import javax.websocket.*;
+import java.io.IOException;
+import java.util.Optional;
+
+
+@ClientEndpoint
 public class ScreenController {
 
     @FXML
@@ -17,7 +22,7 @@ public class ScreenController {
     @FXML
     private TableColumn<Order, String> ID_orderStatus;
 
-    public ObservableList<Order> orders = ScreenTerminal.orders;
+    private ObservableList<Order> orders = FXCollections.observableArrayList();
 
     @FXML
     private void initialize() {
@@ -47,6 +52,48 @@ public class ScreenController {
                 };
             }
         });
+        connectToWebSocket();
+    }
+    private void connectToWebSocket() {
+        WebSocketContainer container = ContainerProvider.getWebSocketContainer();
+        try {
+            container.connectToServer(this, ScreenTerminal.SERVER_URI);
+        } catch (DeploymentException | IOException ex) {
+            System.exit(-1);
+        }
     }
 
+    @OnMessage
+    public void onMessage(String jsonOrder) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        Order order = mapper.readValue(jsonOrder, Order.class);
+        Optional<Order> old = orders.stream().filter(o -> o.getId() == order.getId()).findFirst();
+        if (old.isPresent()) {
+            old.get().setStatus(order.getStatus());
+        } else
+            orders.add(order);
+
+        this.ID_orderTable.setRowFactory(new Callback<TableView<Order>, TableRow<Order>>() {
+            @Override
+            public TableRow<Order> call(TableView<Order> param) {
+                return new TableRow<Order>() {
+                    @Override
+                    public void updateItem(Order item, boolean empty) {
+                        super.updateItem(item, empty);
+                        this.setStyle("");
+                        if (!empty) {
+                            if (item.getStatus().equals("In Progress")) {
+                                this.setStyle("-fx-background-color: lightcoral");
+                            } else if (item.getStatus().equals("Collected")) {
+                                this.setStyle("-fx-background-color: lightyellow");
+                            } else if (item.getStatus().equals("Completed")) {
+                                this.setStyle("-fx-background-color: lightgreen");
+                            }
+                        }
+                    }
+                };
+            }
+        });
+
+    }
 }

@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/cashier-terminal" />
             <option value="$PROJECT_DIR$/customer-terminal" />
+            <option value="$PROJECT_DIR$/picker-terminal" />
             <option value="$PROJECT_DIR$/screen-terminal" />
           </set>
         </option>

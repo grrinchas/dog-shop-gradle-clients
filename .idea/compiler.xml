@@ -21,6 +21,7 @@
     <bytecodeTargetLevel>
       <module name="cashier-terminal" target="1.5" />
       <module name="customer-terminal" target="1.5" />
+      <module name="picker-client" target="1.5" />
       <module name="screen-terminal" target="1.5" />
     </bytecodeTargetLevel>
   </component>

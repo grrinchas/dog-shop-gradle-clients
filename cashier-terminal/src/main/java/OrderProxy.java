@@ -5,7 +5,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.util.Map;
 
-@Path("/r/orders")
+@Path("/orders")
 public interface OrderProxy {
 
     @PUT
